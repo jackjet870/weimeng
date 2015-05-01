@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>为梦网</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/informDetail.css">
+  <link rel="stylesheet" type="text/css" href="./css/font.css">
+  <link rel="stylesheet" href="./css/public.css">
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/public.js"></script>
+
+
+<!-- 导航点击高亮显示js -->
+<script type="text/javascript">
+  $(function(){
+    $("#content_nav a").each(function(){
+      $(this).click(function(){
+        $(this).addClass("active").parent().siblings().children("a").removeClass("active");
+      });
+    });
+  });
+</script>
+</head>
+<body>
+    <div class="header">
+      <div class="head">
+        <div class="logo">
+          <a href="javascript:;">
+            <img src="./img/logo.png" alt="为梦网">
+          </a>
+        </div> <!-- 头部logo结束 -->
+        <div class="nav">
+          <ul>
+            <li id="index"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">寻找项目</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">找合伙人</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">创业代理</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">活动资源</a></li>
+          </ul>
+        </div><!-- 头部nav结束 -->
+        <div class="head-form">
+          <form action="#" method="get">
+            <input type="text" id="head-form-text">
+            <button type="submit" id="head-form-btn"></button>
+          </form>
+        </div>
+        <div class="head-btn">
+          <ul>
+          <!-- 
+            //登陆,隐藏登陆注册按钮
+            //没有登陆则隐藏个人中心按钮
+            <li id="user-btn"><a href="#">登陆</a></li>
+            <li id="user-btn"><a href="#">注册</a></li>
+          -->            
+            <li id="user-btn"><a href="#">胡三<i class="icons2">&#xe601;</i></a></li>
+          </ul>
+        </div> <!-- 头部按钮结束 -->
+      </div>
+      <div class="head-att" id="index-target">
+        <ul>
+          <div class="trigle"></div>
+          <li><a href="#">创业资讯</a></li>
+          <li><a href="#">干货分享</a></li>
+          <li><a href="#">创业公司</a></li>
+          <li><a href="#">极客痛点</a></li>
+        </ul>
+      </div>
+      <div class="head-att2" id="user-target">
+        <ul>
+          <div class="trigle2"></div>
+          <li><a href="#">个人信息</a></li>
+          <li><a href="#">创业信息</a></li>
+          <li><a href="#">个人账户</a></li>
+        </ul>
+      </div>
+    </div> <!-- header结束 -->
+
+  <!-- start*****content部分 -->
+  <div class="content">
+
+    <!-- start   content/content_in -->
+    <div class="content_in">
+
+      <!-- start   content/content_in/content_left-->
+      <div class="content_left">
+
+        <div class="content-up shadow">
+          <div id="left-body">
+            <div id="left-body-title">
+              <div id="left-title-1">痛仰乐队</div>
+              <table>
+                <tr>
+                  <td id="left-td-1">文章来源：<a href="#">为梦网</a></td>
+                  <td id="left-td-2">
+                    <i class="icons">&#xe99c;</i>&nbsp;(17)&nbsp;&nbsp;
+                    <i class="icons">&#xe96b;</i>&nbsp;(17)&nbsp;&nbsp;
+                    <i class="icons">&#xf087;</i>&nbsp;(17)&nbsp;&nbsp;
+                  </td>
+                  <td id="left-td-3">
+                    <span>分享：</span>
+                    <a href="#"><img src="./img/wechat.gif"></a>
+                    <a href="#"><img src="./img/sina.gif"></a>
+                    <a href="#"><img src="./img/qzone.gif"></a>
+                    <a href="#"><img src="./img/renren.gif"></a>
+                    <a href="#"><img src="./img/add.gif"></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div id="left-body-in">
+              <p>&nbsp;&nbsp;研磨时光创始人阿南幼年时被卖到南洋一个咖啡庄园为奴，但他没有自怨自艾的度过一生，而是凭借中国人特有的勤劳和忠诚获得了庄主的信任，并有机会沉淀于咖啡豆的种植、研磨、烹煮等工艺。漂泊一生，历经沧桑，阿南将所有的思乡情结都融入了每一杯咖啡的制作过程之中，经过10年的潜心研究，他创造了一套非常适合华人的咖啡调制秘方，并立志将这种咖啡与全世界华人分享。</p>
+              <p>研磨时光咖啡馆在新加坡正式开业。自开业之日起，店内飘出的醇厚咖啡香就吸引了不少都市白领的驻足，其完全为华人研制的特别口感，更使其在极短的时间内成为当地极受好评的咖啡馆。</p>
+              <p>2008年，研磨时光进入中国，并在多个城市开设了门店。其传播语：“缓生活，，，美滋味。。。”在都市白领中广为流传，亦将研磨时光的品牌形象诠释的淋漓尽致。研磨时光很快成长为华人咖啡品牌。</p>
+              <img src="./img/buagde_test1.gif">
+            </div>
+          </div>
+       
+        </div>
+
+        <!-- content中间部分 -->
+        <div class="content-middle">
+          <span id="next">【下一篇】<a href="#">烧烤架看电视剧</a></span>
+          &emsp;<span id="prev">【上一篇】<a href="#">烧烤架看电视剧</a></span>
+        </div>
+
+        <!-- content左面下半部分 -->
+        <div class="content-down shadow">
+          <span id="down-title">留言与评论</span>
+          <div id="content-down-body">
+            <form>
+              <textarea></textarea>
+              <div class="down-text-btn">
+                <input class="submit-text" type="submit" value="发布">&emsp;
+                <input class="cancel-text" type="reset" value="取消">
+              </div>
+            </form>
+
+            <!-- 这里是每条评论的模块 -->
+            <div class="content-chat">
+              <a href=""><img src="./img/buagde_test1.gif"></a>
+              <div class="content-chat-ins">
+                <span class="chat-pro-name"><a href="#">吃药</a></span><br/>
+                贾克斯叫对方考虑精神科
+              </div>
+              <span class="chat-pro-time">2015-03-26&nbsp;13:44:37</span>
+            </div>
+
+            <!-- 这里是每条评论的模块 -->
+            <div class="content-chat">
+              <a href=""><img src="./img/buagde_test1.gif"></a>
+              <div class="content-chat-ins">
+                <span class="chat-pro-name"><a href="#">吃药</a></span><br/>
+                贾克斯叫对方考虑精神科
+              </div>
+              <span class="chat-pro-time">2015-03-26&nbsp;13:44:37</span>
+            </div>
+
+            <!-- 这里是每条评论的模块 -->
+            <div class="content-chat">
+              <a href=""><img src="./img/buagde_test1.gif"></a>
+              <div class="content-chat-ins">
+                <span class="chat-pro-name"><a href="#">吃药</a></span><br/>
+                贾克斯叫对方考虑精神科
+              </div>
+              <span class="chat-pro-time">2015-03-26&nbsp;13:44:37</span>
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+
+
+<!-- start   content/content_in/content_aside-->
+      <div class="content-aside">
+        <a href="#"><img src="./img/busage_more.gif" id="aside-more-pic"></a>
+
+        <div id="aside-enjoy">您可能对这些项目感兴趣</div>
+
+        <!-- 这里是广告 -->
+        <div class="aside-ad">
+          <a href="#"><img src="./img/busage_test2.gif" class="aside-ad-pic"></a>
+          <div class="aside-ad-title">
+            <img src="./img/busage_check_tag.gif">
+            同城便民生活
+          </div>
+          <div class="aside-ad-article">
+            同城便民生活同城便民生同城便民生同城便民生同城便民生
+          </div>
+          <div class="aside-ad-hot">
+            <i class="icons">&#xe99c;</i>&nbsp;(17)&nbsp;&nbsp;
+            <i class="icons">&#xe96b;</i>&nbsp;(17)&nbsp;&nbsp;
+            <i class="icons">&#xf087;</i>&nbsp;(17)&nbsp;&nbsp;
+          </div>
+        </div>
+
+
+      
+
+
+      </div>
+
+
+
+      
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+    <div class="footer">
+      <div class="foot">
+        <div class="foot-info">
+          <ul>
+            <li>
+              <span>关于我们</span>
+              <ul class="foot-info-list">
+                <li><a href="#">为梦网简介</a></li>
+                <li><a href="#">产品服务</a></li>
+                <li><a href="#">创新优势</a></li>
+                <li><a href="#">友情链接</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>帮助</span>
+              <ul class="foot-info-list">
+                <li><a href="">加入我们</a></li>
+                <li><a href="">寻求报道</a></li>
+                <li><a href="">联系我们</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>业务合作</span>
+              <ul class="foot-info-list">
+                <li><a href="">产品服务</a></li>
+                <li><a href="">寻求报道</a></li>
+                <li><a href="">项目</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>联系我们</span>
+              <ul class="foot-info-list">
+                <li><a href="">北京创业点</a></li>
+                <li><a href="">上海创业点</a></li>
+                <li><a href="">深圳创业点</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>订阅</span>
+              <ul class="foot-info-list">
+                <li><a href=""><i class="icons">&#xea94;</i>&emsp;RSS</a></li>
+                <li><a href=""><i class="icons">&#xe602;</i>&emsp;活动通知订阅</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

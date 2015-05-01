@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>为梦网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/formStyle.css">
+    <link rel="stylesheet" href="./css/InitnateProblem.css"> 
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/public.js"></script>
+    <script src="./js/formVerify.js"></script>
+    <link href="edit/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="edit/third-party/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="edit/umeditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="edit/umeditor.min.js"></script>
+    <script type="text/javascript" src="edit/lang/zh-cn/zh-cn.js"></script>
+     
+    
+    <script>
+    $(function () {
+
+      window.RESULT = {};
+      var NEEDNUM = 100,
+          btID = '#submit';//带#号
+
+      $(btID).bind('click',function () {
+        var ResultLength = 0;
+        //获取RESULT数组长度
+        for (var key in RESULT){
+          if(!RESULT[key]){
+            alert("请确保选项填写符合规则!");
+            return false;
+          }
+          ResultLength++;
+        }
+        if(ResultLength < NEEDNUM){
+          alert("您还有选项没有填写哦!");
+          return false;
+        }else{
+          //
+        }
+      });
+
+      V('#name','empty','项目名称不能为空');
+      V('#pSummary','empty','项目简述不能为空');
+      V('#pDetail','empty','请输入详细介绍');
+      V('#scale','empty','请填写目前的市场规模');
+      V('#introduce','empty','活动的简述不能为空');
+      V('#advantage','empty','请描述一下项目的竞争优势');
+      V('#demand','empty','请描述一下对代理人的要求');
+     
+      V('#user','chinese','请留下您的姓名');
+      V('#phone','phone','请留下正确的电话');
+        //空验证
+
+    });
+    </script>
+
+    
+  </head>
+  <body>
+    <div class="header">
+      <div class="head">
+        <div class="logo">
+          <a href="javascript:;">
+            <img src="./img/logo.png" alt="为梦网">
+          </a>
+        </div> <!-- 头部logo结束 -->
+        <div class="nav">
+          <ul>
+            <li id="index"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">寻找项目</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">找合伙人</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">创业代理</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">活动资源</a></li>
+          </ul>
+        </div><!-- 头部nav结束 -->
+        <div class="head-form">
+          <form action="#" method="get">
+            <input type="text" id="head-form-text">
+            <button type="submit" id="head-form-btn"></button>
+          </form>
+        </div>
+        <div class="head-btn">
+          <ul>
+            <li><a href="#">登陆</a></li>
+            <li><a href="#">注册</a></li>
+          </ul>
+        </div> <!-- 头部按钮结束 -->
+      </div>
+      <div class="head-att" id="index-target">
+        <ul>
+          <div class="trigle"></div>
+          <li><a href="#">创业资讯</a></li>
+          <li><a href="#">干货分享</a></li>
+          <li><a href="#">创业公司</a></li>
+          <li><a href="#">极客痛点</a></li>
+        </ul>
+      </div>
+    </div> <!-- header结束 -->
+    <div class="main">
+      <div class="main-title">
+        <h3>发布您的代理创业项目</h3>
+        <p>完整的信息可以帮助您更快速的找到代理团队</p>
+        <span> <a href=""><< 返回用户中心</a></span>
+      </div>
+      <div class="main-form">
+        <form action="" class="form-horizontal">
+        <div class="form-box">
+          <div class="control-group">
+            <label class="control-label" for="inputWarning" id="project-logo-label">项目logo:</label>
+            <div class="controls" id="project-logo">
+              <img src="" alt="">
+              &emsp;<a href="#" class="btn btn-default">上传图片</a>
+            </div>
+          </div><!-- 一行表单 -->
+
+
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">项目名称:</label>
+            <div class="controls">
+            <input type="text" id="name" placeholder="项目名称">
+            </div>
+          </div><!-- 一行表单 -->
+
+
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">一句话简述<span class="form-need">*</span>:</label>
+            <div class="controls" id="project-logo">
+              <textarea name="" id="pSummary" cols="30" rows="3" class="span8"></textarea>
+            </div>
+          </div><!-- 一行表单 -->
+
+
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">发起地址:</label>
+            <div class="controls" >
+              <select name="" id="" class="span2">
+                <option value="1">地区一</option>
+                <option value="1">地区一</option>
+                <option value="1">地区一</option>
+              </select>
+              <select name="" id="" class="span2">
+                <option value="1">地区一</option>
+                <option value="1">地区一</option>
+                <option value="1">地区一</option>
+              </select>
+            </div>
+          </div><!-- 一行表单 -->
+
+
+          <div class="control-group">
+            <label class="control-label">代理类型:</label>
+            <div class="controls">
+              <select name="" id="" class="span2">
+                <option value="1">代理一</option>
+                <option value="1">代理二</option>
+                <option value="1">代理三</option>
+              </select>
+            </div>
+          </div><!-- 一行表单 -->
+
+
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">项目标签:</label>
+            <div class="controls">    
+              <label class="checkbox inline">
+                <input type="checkbox"> 项目标签
+              </label>  
+              <label class="checkbox inline">
+                <input type="checkbox"> 项目标签
+              </label>  
+              <label class="checkbox inline">
+                <input type="checkbox"> 项目标签
+              </label>  
+              <label class="checkbox inline">
+                <input type="checkbox"> 项目标签
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox"> 项目标签
+              </label>
+            </div>
+          </div><!-- 一行表单 -->
+
+
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">代理地址:</label>
+            <div class="controls" >
+              <select name="" id="" class="span2">
+                <option value="1">地区一</option>
+                <option value="1">地区一</option>
+                <option value="1">地区一</option>
+              </select>
+              <select name="" id="" class="span2">
+                <option value="1">地区一</option>
+                <option value="1">地区一</option>
+                <option value="1">地区一</option>
+              </select>
+            </div>
+          </div><!-- 一行表单 -->
+
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">详细介绍:</label>
+            <div class="controls">
+            <script id="container" name="content" type="text/plain">
+        这里写你的初始化内容
+    </script>
+
+    
+
+              <textarea name="" id="pDetail" cols="30" rows="3" class="span8"></textarea>
+            </div>
+
+          </div><!-- 一行表单 -->
+           
+           
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">补充说明:</label>
+            <script type="text/plain" id="myEditor" style="width:620px;height:100px;">
+            <p class="edit-p"> 例如:竞争优势、代理要求、市场规模、等等..</p>
+            </script>
+
+
+<div class="clear"></div>
+
+<script type="text/javascript">
+    //实例化编辑器
+    var um = UM.getEditor('myEditor');
+    um.addListener('blur',function(){
+        $('#focush2').html('')
+    });
+    um.addListener('focus',function(){
+        $('#focush2').html('')
+    });
+    
+</script>
+</div>
+           
+           <!-- <div class="controls">
+
+              <textarea name="" id="scale" cols="30" rows="3" class="span8"></textarea>
+            </div>-->
+          <!-- 一行表单 -->
+          <!--
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">竞争优势:</label>
+            <div class="controls">
+              <textarea name="" id="advantage" cols="30" rows="3" class="span8"></textarea>
+            </div>
+          </div>--><!-- 一行表单 --> 
+
+          <!--
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">代理要求:</label>
+            <div class="controls">
+              <textarea name="" id="demand" cols="30" rows="3" class="span8"></textarea>
+            </div>
+          </div><!-- 一行表单 --> 
+          
+
+
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">联系人:</label>
+            <div class="controls">
+              <input type="text" id="user" placeholder="联系人">
+            </div>
+          </div><!-- 一行表单 -->
+
+
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">手机号:</label>
+            <div class="controls">
+              <input type="text" id="phone" placeholder="手机号">
+            </div>
+          </div><!-- 一行表单 -->
+
+
+        </div>
+        <div class="controls">
+          <input type="submit" id="submit" value="提交">
+          <input type="submit" class="cancel" value="取消">
+        </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="foot">
+        <div class="foot-info">
+          <ul>
+            <li>
+              <span>关于我们</span>
+              <ul class="foot-info-list">
+                <li><a href="#">为梦网简介</a></li>
+                <li><a href="#">产品服务</a></li>
+                <li><a href="#">创新优势</a></li>
+                <li><a href="#">友情链接</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>帮助</span>
+              <ul class="foot-info-list">
+                <li><a href="">加入我们</a></li>
+                <li><a href="">寻求报道</a></li>
+                <li><a href="">联系我们</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>业务合作</span>
+              <ul class="foot-info-list">
+                <li><a href="">产品服务</a></li>
+                <li><a href="">寻求报道</a></li>
+                <li><a href="">项目</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>联系我们</span>
+              <ul class="foot-info-list">
+                <li><a href="">北京创业点</a></li>
+                <li><a href="">上海创业点</a></li>
+                <li><a href="">深圳创业点</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>订阅</span>
+              <ul class="foot-info-list">
+                <li><a href=""><i class="icons">&#xea94;</i>&emsp;RSS</a></li>
+                <li><a href=""><i class="icons">&#xe602;</i>&emsp;活动通知订阅</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

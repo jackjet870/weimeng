@@ -1,0 +1,210 @@
+.content{
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/*个人中心左侧公共部分*/
+
+.content-left{
+  width: 250px;
+  margin-top: 15px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+}
+.left-top{
+  background-color: #f6f6f6;
+  width: 250px;
+  height: auto;
+  overflow: hidden;
+}
+.left-top-head{
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.left-top-head h4{
+  font-family: "微软雅黑";
+  font-weight: normal;
+  float: left;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0px;
+  padding: 0px;
+  padding-left: 10px;
+}
+.left-top-head a{
+  display: block;
+  margin-right: 10px;
+  float: right;
+  font-size: 16px !important;
+  font-family: "微软雅黑";
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+}
+.left-top-content{
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+.left-top-content ul{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  list-style: none;
+  font-family: "微软雅黑";
+}
+.left-top-content ul li{
+  font-size: 14px;
+  height: 30px;
+  overflow: hidden;
+  display: block;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.left-top-content ul li span{
+  font-size: 20px;
+  color: #f81;
+}
+.btn1 a{
+  display: block;
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+  font-family: "微软雅黑";
+  font-size: 20px;
+  background-color: #6aac2f;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.btn2 a{
+  display: block;
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+  font-family: "微软雅黑";
+  font-size: 20px;
+  background-color: #f81;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+/*个人中心左侧公共部分结束*/
+
+/*右侧顶部公共部分*/
+.content-right{
+  float: left;
+  margin-top: 18px;
+  width: 930px;
+  height: auto;
+  overflow: hidden;
+}
+.content-right-head{
+ height: 42px; 
+ background-color: #f6f6f6;
+ border-bottom: 1px solid #ccc;
+}
+.content-right-head ul{
+  height: 42px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  padding-left: 20px;
+}
+.content-right-head ul li {
+  height: 30px;
+  width: 120px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 12px;
+  font-family: "微软雅黑";
+}
+.head-active{
+  height: 29px;
+  width: 118px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+
+}
+.content-right-head ul li a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+/*结束*/
+
+
+/*个人中心信息右侧详细信息小标题*/
+.right-bto{
+  height: auto;
+  overflow: hidden;
+  width: 910px;
+  position: relative;
+}
+.right-bto-head{
+  width: 910px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.right-bto-head h3{
+  font-family: "微软雅黑";
+  display: block;
+  float: left;
+  font-weight: normal;
+}
+.right-bto-head ul{
+  float: right;
+  margin: 0px;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0px;
+}
+.right-bto-head li a{
+  text-decoration: none;
+}
+/*结束*/
+
+/*个人中心表单图片位置*/
+
+.person-img{
+  height: 135px;
+  width: 420px;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+}
+.person-img img{
+  width: 131px;
+  height: 131px;
+  border: 2px solid #f2f2f2;
+  display: block;
+
+  float: left;
+}
+.person-img p{
+  width: 265px;
+  margin-top:40px;
+  padding: 10px;
+  display: block;
+  float: left;
+
+}
+/*结束*/

@@ -1,0 +1,265 @@
+/*
+ *这里是 创业代理 页面的css样式
+ *2015-4-10
+ *edit by gemicat
+*/
+
+
+/*.shadow是公共div阴影效果*/
+.shadow{
+	border:#dedede 1px solid;
+	color:#dedede;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);/*ie*/
+	-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+	box-shadow:2px 2px 10px #909090;/*opera或ie9*/
+}
+.active{
+	color: #fff !important;
+	background: #259be5;
+}
+.clear{
+	clear:both;
+}
+
+
+/*大图*/
+.banner-pic{
+	width: 100%;
+	height:265px;
+	background: url("../img/entpro_banner-pic.png") center no-repeat #b52d13;
+	margin: 0 auto;
+}
+/*start-----content部分*/
+.content{
+	width: 100%;
+	margin: 0 auto;
+	background: #f6f6f6;
+	overflow: hidden;
+}
+
+.content_in{
+	width: 1200px;
+	min-height: 200px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 19px;
+	padding-bottom: 30px;
+}
+
+/*content左半部分*/
+.content_left{
+	width: 1193px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 53px;
+}
+
+/*左半部分导航*/
+#content_nav{
+	width: 1185px;
+	height: 170px;
+	border-bottom: #dedede 1px solid;
+}
+#content_nav div{
+	width: 100%;
+	overflow: hidden;
+}
+#content_nav ul{
+	color: #989898;
+	font-size:14px;
+	font-family: 'Microsoft YaHei';
+	margin-top: 15px;
+}
+#content_nav ul li{
+	float: left;
+	list-style: none;
+	margin-right: 6px;
+}
+.content-nav-title{
+	display: block;
+	padding: 6px 10px 6px 10px;
+}
+#content_nav ul li a{
+	font-size:14px;
+	font-family: 'Microsoft YaHei';
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 6px 10px 6px 10px;
+}
+#content_nav ul li a:hover{
+	color: #fff !important;
+	background: #259be5;
+}
+
+
+/*左半部分主体内容*/
+#content-body{
+	width: 100%;
+	min-height:100px; 
+	padding-bottom: 53px;
+}
+/*中间所有内容都是重复的，从这里开始是重复部分*/
+.content-main{
+	width: 361px;
+	height: 450px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin-left: 25px;
+	margin-top: 31px;
+}
+.main-tag-pic{
+	position: absolute;
+	z-index: 999;
+	left: 0px;
+	top: 18px;
+}
+.main-article-bg{
+	width: 350px;
+	height: 450px;
+	background: #fff;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.main-article-con{
+	width: 100%;
+	height: 410px;
+	background: #fff;
+	float: left;
+	overflow: hidden;
+}
+/*图片轮播*/
+div.slideBox{
+	width: 350px;
+	height: 208px;
+}
+div.slideBox ul.items li a img{
+	width: 350px;
+	height: 208px;
+}
+div.slideBox div.tips div.nums{
+	right: 126px;
+}
+div.slideBox{
+	float: left;
+}
+.main-title{
+	float: left;
+	width: 303px;
+	margin-left: 15px;
+	margin-top: 7px;
+}
+.main-title a{
+	color: #000;
+	text-decoration: none;
+	font-family: "微软雅黑";
+	font-size: 18px;
+}
+.main-title span{
+	float: right;
+	margin-right;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #000;
+}
+.main-tag{
+	float: left;
+	width: 303px;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.main-tag span{
+	display: block;
+	padding: 4px 14px 4px 14px;
+	float: left;
+	margin-right: 3px;
+	background: #f6f6f6;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #8f8f8f;
+}
+.main-introduce{
+	width: 303px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #b5b5b5;
+}
+.main-dir{
+	width: 303px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 8px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #666666;
+	position: relative;
+}
+.main-dir-box{
+	width: 200px;
+	min-height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.main-dir-box ul{
+	margin-left: 1px;
+}
+.main-dir-box li{
+	list-style: none;
+	float: left;
+	display: block;
+	width: 88px;
+	height: 24px;
+	background: #259be5;
+	margin-bottom:8px ;
+	margin-right:11px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
+.main-hot{
+	width: 303px;
+	float: left;
+	margin-left: 15px;
+	height: 41px;
+	line-height: 41px;
+	color: #98989a;
+	text-align: left;
+	font-size: 12px;
+}
+
+/*分页样式*/
+.page{
+	margin-top: 40px;
+	margin-left: 426px;
+	float: left;
+}
+.page li{
+	margin-right:7px; 
+	float: left;
+	list-style: none;
+}
+.page li a{
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #dededf;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+	float: left;
+	color: #000;
+}
+.select{
+	background: #005580;
+	color: #fff !important;
+}
+
+
+
+/*end-----content部分

@@ -1,0 +1,291 @@
+/*
+ *这里是 创业代理 页面的css样式
+ *2015-4-10
+ *edit by gemicat
+*/
+
+
+/*.shadow是公共div阴影效果*/
+.shadow{
+	border:#dedede 1px solid;
+	color:#dedede;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);/*ie*/
+	-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+	box-shadow:2px 2px 10px #909090;/*opera或ie9*/
+}
+.active{
+	color: #fff !important;
+	background: #259be5;
+}
+.clear{
+	clear:both;
+}
+
+/*start-----content部分*/
+.content{
+	width: 100%;
+	margin: 0 auto;
+	background: #f6f6f6;
+	overflow: hidden;
+}
+
+.content_in{
+	width: 1170px;
+	min-height: 200px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 19px;
+	padding-bottom: 30px;
+}
+
+/*content左半部分*/
+.content_left{
+	width: 918px;
+	overflow: hidden;
+	background: #fff;
+	padding-bottom: 53px;
+	float: left;
+}
+
+/*左半部分导航*/
+#content_nav{
+	width: 918px;
+	height: 170px;
+	border-bottom: #dedede 1px solid;
+}
+#content_nav div{
+	width: 100%;
+	overflow: hidden;
+}
+#content_nav ul{
+	color: #989898;
+	font-size:14px;
+	font-family: 'Microsoft YaHei';
+	margin-top: 15px;
+}
+#content_nav ul li{
+	float: left;
+	list-style: none;
+	margin-right: 6px;
+}
+.content-nav-title{
+	display: block;
+	padding: 6px 10px 6px 10px;
+}
+#content_nav ul li a{
+	font-size:14px;
+	font-family: 'Microsoft YaHei';
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 6px 10px 6px 10px;
+}
+#content_nav ul li a:hover{
+	color: #fff !important;
+	background: #259be5;
+}
+
+
+/*左半部分主体内容*/
+#content-body{
+	width: 100%;
+	min-height:100px; 
+	padding-bottom: 53px;
+}
+/*中间所有内容都是重复的，从这里开始是重复部分*/
+.content-main{
+	width: 275px;
+	height: 360px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin-left: 18px;
+	margin-top: 31px;
+}
+.main-tag-pic{
+	position: absolute;
+	z-index: 999;
+	left: 0px;
+	top: 12px;
+}
+.main-article-bg{
+	width: 253px;
+	height: 351px;
+	background: #f5f6f9;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	border: 5px solid #eceef2;
+}
+.main-article-con{
+	width: 100%;
+	height: 310px;
+	background: #fff;
+	float: left;
+	overflow: hidden;
+}
+.main-article-con img{
+	margin-left: 15px;
+	margin-top: 7px;
+	float: left;
+	width: 224px;
+	height: 133px;
+}
+.main-title{
+	float: left;
+	width: 224px;
+	margin-left: 15px;
+	margin-top: 7px;
+}
+.main-title a{
+	color: #3377aa;
+	text-decoration: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+.main-title span{
+	float: right;
+	margin-right;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #a7a7a7;
+}
+.main-tag{
+	float: left;
+	width: 224px;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+.main-tag span{
+	display: block;
+	padding: 4px 14px 4px 14px;
+	float: left;
+	margin-right: 3px;
+	background: #f6f6f6;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #8f8f8f;
+}
+.main-introduce{
+	width: 224px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #b5b5b5;
+}
+.main-dir{
+	width: 224px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 8px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #666666;
+}
+.main-hot{
+	width: 100%;
+	height: 41px;
+	line-height: 41px;
+	color: #98989a;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+}
+
+/*分页样式*/
+.page{
+	margin-top: 40px;
+	margin-left: 281px;
+	float: left;
+}
+.page li{
+	margin-right:7px; 
+	float: left;
+	list-style: none;
+}
+.page li a{
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #dededf;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+	float: left;
+	color: #000;
+}
+.select{
+	background: #005580;
+	color: #fff !important;
+}
+
+
+/*中间右边部分*/
+.content-aside{
+	width: 229px;
+	min-height: 200px;
+	float: right;
+	overflow: hidden;
+}
+#aside-more-pic{
+	width: 229px;
+	height: 131px;
+	float: left;
+}
+#aside-enjoy{
+	width: 227px;
+	height: 62px;
+	float: left;
+	background:#fff;
+	border: 1px solid #dedede;
+	margin-top: 10px;
+	line-height: 62px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+/*广告公共样式*/
+.aside-ad{
+	width: 100%;
+	height: 255px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 40px;
+}
+.aside-ad-pic{
+	width: 100%;
+	height: 136px;
+	float: left;
+}
+.aside-ad-title{
+	width: 100%;
+	height: 21px;
+	line-height: 21px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	float: left;
+	margin-top: 26px;
+}
+.aside-ad-title img{
+	float: right;
+}
+.aside-ad-article{
+	width: 100%;
+	float:left;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #b5b5b5;
+	margin-top: 5px;
+}
+.aside-ad-hot{
+	color: #98989a;
+	font-size: 12px;
+	position: absolute;
+	bottom: 3px;
+	right: 20px;
+}
+/*end-----content部分

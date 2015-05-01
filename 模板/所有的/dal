@@ -1,0 +1,37 @@
+[33mcommit 730c74d223cf6f52fb7566380de770b14ec76d66[m
+Author: husan <rhinonan@163.com>
+Date:   Sat Apr 11 12:07:34 2015 +0800
+
+    Revert "public templeft finished"
+    
+    This reverts commit 2264bfeb4f45da4fcab16c17fa51490b64e14355.
+
+[33mcommit 2264bfeb4f45da4fcab16c17fa51490b64e14355[m
+Author: husan <rhinonan@163.com>
+Date:   Fri Apr 10 18:33:39 2015 +0800
+
+    public templeft finished
+
+[33mcommit cbcc57111ed06325dd538f26ac45e19c15c897bd[m
+Author: husan <rhinonan@163.com>
+Date:   Fri Apr 10 13:52:07 2015 +0800
+
+    templet
+
+[33mcommit 1d428b3e14f0dc472a8d6101dbf46846526d326b[m
+Author: husan <rhinonan@163.com>
+Date:   Thu Apr 9 18:26:11 2015 +0800
+
+    dependent init
+
+[33mcommit 0225299386cff6cdced91e93c0a83977e462c057[m
+Author: husan <rhinonan@163.com>
+Date:   Thu Apr 9 18:15:53 2015 +0800
+
+    project init
+
+[33mcommit e14764eb267d3aeadf59d4d59955d9e13d3fe974[m
+Author: husan <rhinonan@users.noreply.github.com>
+Date:   Thu Apr 9 16:58:25 2015 +0800
+
+    Initial commit

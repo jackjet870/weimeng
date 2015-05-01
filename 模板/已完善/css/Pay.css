@@ -1,0 +1,45 @@
+.pay-method{
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
+.pay-method ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pay-option li{
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #eee;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.pay-option-active{
+  border-top: 2px solid #f81;
+  height: 38px !important;
+  line-height: 35px !important;
+  width: 78px !important;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.radio-img{
+  line-height: 35px;
+  height: 35px;
+  vertical-align: middle;
+}
+.radio-img input{
+  margin-top: 10px;
+}
+.radio-img img{
+  width: 140px !important;
+  height: 30px !important;
+  border: 1px solid #eee;
+}
+.pay-detail{
+  margin-top: 20px !important;
+  overflow: hidden;
+}

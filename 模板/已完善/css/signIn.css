@@ -1,0 +1,36 @@
+body{
+  background-color: #eee;
+}
+.main{
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.main-title{
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 20px;
+  height: 98px;
+  line-height: 120px;
+}
+.main-form{
+  width: 1169px;
+  height: 476px;
+  overflow: hidden;
+}
+.main-form form {
+  padding-top: 50px;
+  width: 1169px;
+  margin: 0 auto;
+  padding-right: 50px;
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+}
+#signin{
+  width: 325px !important;
+}
+.input-prependedInput{
+  padding-right: 20px !important;
+}

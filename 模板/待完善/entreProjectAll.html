@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>为梦网</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/entreProjectAll.css">
+  <link rel="stylesheet" type="text/css" href="./css/font.css">
+  <!-- 图片轮播css -->
+  <link href="css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+  <!-- 图片轮播js -->
+  <script src="js/jquery.slideBox.js" type="text/javascript"></script>  
+  <link rel="stylesheet" href="./css/public.css">
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/public.js"></script>
+
+
+<!-- 图片轮播特效 -->
+<script>
+  $(function(){
+    $('.slideDemo').each(function(){
+      $(this).slideBox({
+        duration : 0.3,//滚动持续时间，单位：秒
+        easing : 'linear',//swing,linear//滚动特效
+        delay : 5,//滚动延迟时间，单位：秒
+        hideClickBar : false,//不自动隐藏点选按键
+        clickBarRadius : 5
+      });
+    });
+  });
+</script>  
+
+<!-- 导航点击高亮显示js -->
+<script type="text/javascript">
+  $(function(){
+    $("#content_nav a").each(function(){
+      $(this).click(function(){
+        $(this).addClass("active").parent().siblings().children("a").removeClass("active");
+      });
+    });
+  });
+</script>
+
+<!-- 分页js -->
+<script type="text/javascript">
+  $(function(){
+    $(".page a").each(function(){
+      $(this).click(function(){
+        $(this).addClass("select").parent().siblings().children("a").removeClass("select");
+      });
+    });
+  });
+</script>
+
+</head>
+<body>
+    <div class="header">
+      <div class="head">
+        <div class="logo">
+          <a href="javascript:;">
+            <img src="./img/logo.png" alt="为梦网">
+          </a>
+        </div> <!-- 头部logo结束 -->
+        <div class="nav">
+          <ul>
+            <li id="index"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">寻找项目</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">找合伙人</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">创业代理</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">活动资源</a></li>
+          </ul>
+        </div><!-- 头部nav结束 -->
+        <div class="head-form">
+          <form action="#" method="get">
+            <input type="text" id="head-form-text">
+            <button type="submit" id="head-form-btn"></button>
+          </form>
+        </div>
+        <div class="head-btn">
+          <ul>
+          <!-- 
+            //登陆,隐藏登陆注册按钮
+            //没有登陆则隐藏个人中心按钮
+            <li id="user-btn"><a href="#">登陆</a></li>
+            <li id="user-btn"><a href="#">注册</a></li>
+          -->            
+            <li id="user-btn"><a href="#">胡三<i class="icons2">&#xe601;</i></a></li>
+          </ul>
+        </div> <!-- 头部按钮结束 -->
+      </div>
+      <div class="head-att" id="index-target">
+        <ul>
+          <div class="trigle"></div>
+          <li><a href="#">创业资讯</a></li>
+          <li><a href="#">干货分享</a></li>
+          <li><a href="#">创业公司</a></li>
+          <li><a href="#">极客痛点</a></li>
+        </ul>
+      </div>
+      <div class="head-att2" id="user-target">
+        <ul>
+          <div class="trigle2"></div>
+          <li><a href="#">个人信息</a></li>
+          <li><a href="#">创业信息</a></li>
+          <li><a href="#">个人账户</a></li>
+        </ul>
+      </div>
+    </div> <!-- header结束 -->
+
+<!-- 大图 -->
+  <div class="banner-pic"></div>
+  <!-- start*****content部分 -->
+  <div class="content">
+
+    <!-- start   content/content_in -->
+    <div class="content_in">
+
+      <!-- start   content/content_in/content_left-->
+      <div class="content_left">
+        <!-- 内容部分的导航 -->
+        <div id="content_nav" class="shadow">
+
+          <div>
+            <ul>
+              <li class="content-nav-title">项目类型：</li>
+              <li><a class="active" href="#">全部</a></li>
+              <li><a href="#">电子商务</a></li>
+              <li><a href="#">移动互联</a></li>
+              <li><a href="#">社交媒体</a></li>
+              <li><a href="#">美食娱乐</a></li>
+              <li><a href="#">生活服务</a></li>
+              <li><a href="#">旅游教育</a></li>
+              <li><a href="#">平台服务</a></li>
+              <li><a href="#">其他</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <ul style="margin-left:11px;">
+              <li class="content-nav-title">召唤合伙人：</li>
+              <li><a class="active" href="#">全国</a></li>
+              <li><a href="#">技术开发</a></li>
+              <li><a href="#">营销销售</a></li>
+              <li><a href="#">运营管理</a></li>
+              <li><a href="#">设计美工</a></li>
+              <li><a href="#">出资合伙</a></li>
+              <li><a href="#">其他</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li class="content-nav-title">项目阶段：</li>
+              <li><a class="active" href="#">全部</a></li>
+              <li><a href="#">策划中</a></li>
+              <li><a href="#">研发中</a></li>
+              <li><a href="#">运营中</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        
+
+        <!-- 内容部分主体部分 -->
+        <div id="content-body">
+        <!-- 写后台要控制字数，不然会超出范围，:) -->
+          <div class="content-main">
+            <img src="./img/busage_main_tag.png" class="main-tag-pic">
+            <div class="main-article-bg shadow">
+
+              <div class="main-article-con">
+                <!-- 图片轮播开始 -->
+                <div class="slideDemo slideBox">
+                  <ul class="items">
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题一"><img src="img/1.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题二"><img src="img/2.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题三"><img src="img/3.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题四"><img src="img/4.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题五"><img src="img/5.jpg"></a></li>
+                  </ul>
+                </div>
+                <!-- 图片轮播结束 -->
+                <div class="main-title">
+                  <span>广东,深圳</span>
+                  <a href="#">豪车云掌控系统</a>
+                </div>
+                <div class="main-tag">
+                  <span>交通</span>
+                  <span>互联网</span>
+                </div>
+                <div class="main-introduce">
+                  致力于打造高端汽车主全方位汽车智能服务的移动互联网综合平台
+                </div>
+                <div class="main-dir">
+                  <strong>代理类型：</strong>
+                  <div class="main-dir-box">
+                    <ul>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="main-hot">
+                <i class="icons">&#xe99c;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xe96b;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xf087;</i>&nbsp;(17)&nbsp;
+              </div>
+            </div>
+          </div>
+
+          <!-- 写后台要控制字数，不然会超出范围，:) -->
+          <div class="content-main">
+            <img src="./img/busage_main_tag.png" class="main-tag-pic">
+            <div class="main-article-bg shadow">
+
+              <div class="main-article-con">
+                <!-- 图片轮播开始 -->
+                <div class="slideDemo slideBox">
+                  <ul class="items">
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题一"><img src="img/1.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题二"><img src="img/2.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题三"><img src="img/3.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题四"><img src="img/4.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题五"><img src="img/5.jpg"></a></li>
+                  </ul>
+                </div>
+                <!-- 图片轮播结束 -->
+                <div class="main-title">
+                  <span>广东,深圳</span>
+                  <a href="#">豪车云掌控系统</a>
+                </div>
+                <div class="main-tag">
+                  <span>交通</span>
+                  <span>互联网</span>
+                </div>
+                <div class="main-introduce">
+                  致力于打造高端汽车主全方位汽车智能服务的移动互联网综合平台
+                </div>
+                <div class="main-dir">
+                  <strong>代理类型：</strong>
+                  <div class="main-dir-box">
+                    <ul>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="main-hot">
+                <i class="icons">&#xe99c;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xe96b;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xf087;</i>&nbsp;(17)&nbsp;
+              </div>
+            </div>
+          </div>
+
+          <!-- 写后台要控制字数，不然会超出范围，:) -->
+          <div class="content-main">
+            <img src="./img/busage_main_tag.png" class="main-tag-pic">
+            <div class="main-article-bg shadow">
+
+              <div class="main-article-con">
+                <!-- 图片轮播开始 -->
+                <div class="slideDemo slideBox">
+                  <ul class="items">
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题一"><img src="img/1.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题二"><img src="img/2.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题三"><img src="img/3.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题四"><img src="img/4.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题五"><img src="img/5.jpg"></a></li>
+                  </ul>
+                </div>
+                <!-- 图片轮播结束 -->
+                <div class="main-title">
+                  <span>广东,深圳</span>
+                  <a href="#">豪车云掌控系统</a>
+                </div>
+                <div class="main-tag">
+                  <span>交通</span>
+                  <span>互联网</span>
+                </div>
+                <div class="main-introduce">
+                  致力于打造高端汽车主全方位汽车智能服务的移动互联网综合平台
+                </div>
+                <div class="main-dir">
+                  <strong>代理类型：</strong>
+                  <div class="main-dir-box">
+                    <ul>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="main-hot">
+                <i class="icons">&#xe99c;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xe96b;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xf087;</i>&nbsp;(17)&nbsp;
+              </div>
+            </div>
+          </div>
+
+          <!-- 写后台要控制字数，不然会超出范围，:) -->
+          <div class="content-main">
+            <img src="./img/busage_main_tag.png" class="main-tag-pic">
+            <div class="main-article-bg shadow">
+
+              <div class="main-article-con">
+                <!-- 图片轮播开始 -->
+                <div class="slideDemo slideBox">
+                  <ul class="items">
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题一"><img src="img/1.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题二"><img src="img/2.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题三"><img src="img/3.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题四"><img src="img/4.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题五"><img src="img/5.jpg"></a></li>
+                  </ul>
+                </div>
+                <!-- 图片轮播结束 -->
+                <div class="main-title">
+                  <span>广东,深圳</span>
+                  <a href="#">豪车云掌控系统</a>
+                </div>
+                <div class="main-tag">
+                  <span>交通</span>
+                  <span>互联网</span>
+                </div>
+                <div class="main-introduce">
+                  致力于打造高端汽车主全方位汽车智能服务的移动互联网综合平台
+                </div>
+                <div class="main-dir">
+                  <strong>代理类型：</strong>
+                  <div class="main-dir-box">
+                    <ul>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="main-hot">
+                <i class="icons">&#xe99c;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xe96b;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xf087;</i>&nbsp;(17)&nbsp;
+              </div>
+            </div>
+          </div>
+
+          <!-- 写后台要控制字数，不然会超出范围，:) -->
+          <div class="content-main">
+            <img src="./img/busage_main_tag.png" class="main-tag-pic">
+            <div class="main-article-bg shadow">
+
+              <div class="main-article-con">
+                <!-- 图片轮播开始 -->
+                <div class="slideDemo slideBox">
+                  <ul class="items">
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题一"><img src="img/1.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题二"><img src="img/2.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题三"><img src="img/3.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题四"><img src="img/4.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题五"><img src="img/5.jpg"></a></li>
+                  </ul>
+                </div>
+                <!-- 图片轮播结束 -->
+                <div class="main-title">
+                  <span>广东,深圳</span>
+                  <a href="#">豪车云掌控系统</a>
+                </div>
+                <div class="main-tag">
+                  <span>交通</span>
+                  <span>互联网</span>
+                </div>
+                <div class="main-introduce">
+                  致力于打造高端汽车主全方位汽车智能服务的移动互联网综合平台
+                </div>
+                <div class="main-dir">
+                  <strong>代理类型：</strong>
+                  <div class="main-dir-box">
+                    <ul>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="main-hot">
+                <i class="icons">&#xe99c;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xe96b;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xf087;</i>&nbsp;(17)&nbsp;
+              </div>
+            </div>
+          </div>
+
+          <!-- 写后台要控制字数，不然会超出范围，:) -->
+          <div class="content-main">
+            <img src="./img/busage_main_tag.png" class="main-tag-pic">
+            <div class="main-article-bg shadow">
+
+              <div class="main-article-con">
+                <!-- 图片轮播开始 -->
+                <div class="slideDemo slideBox">
+                  <ul class="items">
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题一"><img src="img/1.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题二"><img src="img/2.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题三"><img src="img/3.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题四"><img src="img/4.jpg"></a></li>
+                    <li><a href="http://www.jq22.com/" title="这里是测试标题五"><img src="img/5.jpg"></a></li>
+                  </ul>
+                </div>
+                <!-- 图片轮播结束 -->
+                <div class="main-title">
+                  <span>广东,深圳</span>
+                  <a href="#">豪车云掌控系统</a>
+                </div>
+                <div class="main-tag">
+                  <span>交通</span>
+                  <span>互联网</span>
+                </div>
+                <div class="main-introduce">
+                  致力于打造高端汽车主全方位汽车智能服务的移动互联网综合平台
+                </div>
+                <div class="main-dir">
+                  <strong>代理类型：</strong>
+                  <div class="main-dir-box">
+                    <ul>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                      <li>技术合伙人</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="main-hot">
+                <i class="icons">&#xe99c;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xe96b;</i>&nbsp;(17)&nbsp;
+                <i class="icons">&#xf087;</i>&nbsp;(17)&nbsp;
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+
+        <div class="clear"></div>
+      </div>
+
+
+
+
+
+      <!-- 分页 -->
+        <div class="page">
+          <ul>
+            <li><a href="#" class="select">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">下一页</a></li>
+            <li><a href="#">尾页</a></li>
+          </ul>
+        </div> 
+
+
+      
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+    <div class="footer">
+      <div class="foot">
+        <div class="foot-info">
+          <ul>
+            <li>
+              <span>关于我们</span>
+              <ul class="foot-info-list">
+                <li><a href="#">为梦网简介</a></li>
+                <li><a href="#">产品服务</a></li>
+                <li><a href="#">创新优势</a></li>
+                <li><a href="#">友情链接</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>帮助</span>
+              <ul class="foot-info-list">
+                <li><a href="">加入我们</a></li>
+                <li><a href="">寻求报道</a></li>
+                <li><a href="">联系我们</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>业务合作</span>
+              <ul class="foot-info-list">
+                <li><a href="">产品服务</a></li>
+                <li><a href="">寻求报道</a></li>
+                <li><a href="">项目</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>联系我们</span>
+              <ul class="foot-info-list">
+                <li><a href="">北京创业点</a></li>
+                <li><a href="">上海创业点</a></li>
+                <li><a href="">深圳创业点</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>订阅</span>
+              <ul class="foot-info-list">
+                <li><a href=""><i class="icons">&#xea94;</i>&emsp;RSS</a></li>
+                <li><a href=""><i class="icons">&#xe602;</i>&emsp;活动通知订阅</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

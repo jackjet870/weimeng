@@ -1,0 +1,227 @@
+/*
+ *这里是 创业代理 页面的css样式
+ *2015-4-10
+ *edit by gemicat
+*/
+
+
+/*.shadow是公共div阴影效果*/
+.shadow{
+	border:#dedede 1px solid;
+	color:#dedede;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);/*ie*/
+	-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+	box-shadow:2px 2px 10px #909090;/*opera或ie9*/
+}
+.active{
+	color: #fff !important;
+	background: #259be5;
+}
+.clear{
+	clear:both;
+}
+body,a{
+	font-family: "微软雅黑";
+}
+
+/*start-----content部分*/
+.content{
+	width: 100%;
+	margin: 0 auto;
+	background: #f6f6f6;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+
+.content_in{
+	width: 1170px;
+	min-height: 200px;
+	margin: 0 auto;
+	margin-top: 19px;
+	padding-bottom: 30px;
+}
+
+/*content左半部分*/
+.content_left{
+	width: 924px;
+	float: left;
+}
+/*content部分左面上半部分*/
+.content-up{
+	width: 918px;
+	min-height:200px;
+	float: left;
+	padding-bottom: 60px;
+	background: #fff;
+}
+#left-head{
+	width: 100%;
+	min-height: 356px;
+	float: left;
+	position: relative;
+}
+#left-head-state{
+	position: absolute;
+	width: 43px;
+	height: 99px;
+	background: url("../img/pracde_state-teg.png") center no-repeat;
+	top: -11px;
+	right: 23px;
+}
+#left-head-state div{
+	width: 15px;
+	margin: 0 auto;
+	line-height: 17px;
+	font-size: 16px;
+	color: #fff;
+	margin-top: 10px;
+}
+#left-title{
+	width: 700px;
+	margin-left: 110px;
+	margin-top: 40px;
+	font-size: 18px;
+	color: #3377aa;
+	text-align: center;
+}
+#left-cover{
+	width: 700px;
+	height: 343px;
+	float: left;
+	margin-left: 110px;
+	margin-top: 18px;
+}
+#left-head{
+	display: block;
+	float: left;
+	margin-top: 
+}
+#left-middle span{
+	display: block;
+	width: 177px;
+	height: 37px;
+	text-align: center;
+	line-height: 37px;
+	background: #63aa26;
+	color: #fff;
+	float: left;
+	margin-left: 200px;
+}
+#left-middle a{
+	display: block;
+	width: 124px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background: #fff;
+	color: #6f6f6f;
+	float: left;
+	margin-left: 13px;
+	text-decoration: none;
+	border: 1px solid #d8d8d8;
+}
+#left-head table{
+	display: block;
+	float: left;
+	margin-top: 43px;
+	margin-left: 110px;
+	border: 1px solid #ebebeb;
+}
+#left-head table thead{
+	background: #f6f6f6;
+}
+#left-head table tr{
+	border-top: 1px solid #ebebeb;
+}
+#left-head table td{
+	width: 175px;
+	height: 41px;
+	display: block;
+	line-height: 41px;
+	text-align: center;
+	float: left;
+	color: #212121;
+	font-size: 14px;
+}
+#left-middle{
+	width: 700px;
+	margin-left: 110px;
+	float: left;
+	margin-top: 42px;
+}
+
+
+
+
+
+/**********************************/
+/*中间右边部分*/
+.content-aside{
+	width: 229px;
+	min-height: 200px;
+	float: right;
+	overflow: hidden;
+}
+#aside-more-pic{
+	width: 229px;
+	height: 131px;
+	float: left;
+}
+#aside-enjoy{
+	width: 227px;
+	height: 62px;
+	float: left;
+	background:#fff;
+	border: 1px solid #dedede;
+	margin-top: 10px;
+	line-height: 62px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+
+/*广告公共样式*/
+.aside-ad{
+	width: 100%;
+	height: 255px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 40px;
+}
+.aside-ad-pic{
+	width: 100%;
+	height: 136px;
+	float: left;
+}
+.aside-ad-title{
+	width: 100%;
+	height: 21px;
+	line-height: 21px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	float: left;
+	margin-top: 26px;
+}
+.aside-ad-title img{
+	float: right;
+}
+.aside-ad-article{
+	width: 100%;
+	float:left;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #b5b5b5;
+	margin-top: 5px;
+}
+.aside-ad-hot{
+	color: #98989a;
+	font-size: 12px;
+	position: absolute;
+	bottom: 3px;
+	right: 20px;
+}
+/*end-----content部分

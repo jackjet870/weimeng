@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>为梦网</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/formStyle.css">
+    <link rel="stylesheet" href="./css/PayIdentify.css">
+    <script src="./js/jquery-1.11.2.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="head">
+        <div class="logo">
+          <a href="javascript:;">
+            <img src="./img/logo.png" alt="为梦网">
+          </a>
+        </div> <!-- 头部logo结束 -->
+        <div class="nav">
+          <ul>
+            <li id="index"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">寻找项目</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">找合伙人</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">创业代理</a></li>
+            <div class="nav-border"></div>
+            <li><a href="javascript:;">活动资源</a></li>
+          </ul>
+        </div><!-- 头部nav结束 -->
+        <div class="head-form">
+          <form action="#" method="get">
+            <input type="text" id="head-form-text">
+            <button type="submit" id="head-form-btn"></button>
+          </form>
+        </div>
+        <div class="head-btn">
+          <ul>
+            <li><a href="#">登陆</a></li>
+            <li><a href="#">注册</a></li>
+          </ul>
+        </div> <!-- 头部按钮结束 -->
+      </div>
+      <div class="head-att" id="index-target">
+        <ul>
+          <div class="trigle"></div>
+          <li><a href="#">创业资讯</a></li>
+          <li><a href="#">干货分享</a></li>
+          <li><a href="#">创业公司</a></li>
+          <li><a href="#">极客痛点</a></li>
+        </ul>
+      </div>
+    </div> <!-- header结束 -->
+    <div class="main">
+      <div class="main-title">
+        <h3>认证支付</h3>
+        <p>完整的信息可以让您更快的找到合作伙伴</p>
+        <span> <a href="">什么是官方认证?</a></span>
+      </div>
+      <div class="main-form">
+        <form action="" class="form-horizontal">
+        <div class="form-box">
+          <div class="pay-identify-att">
+            项目图片: <br>
+            <img src="#" alt="项目图片">
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">选择需要推广的项目<span class="form-need">*</span>:</label>
+            <div class="controls" id="project-logo"> 
+              <select name="" id="">
+                <option value="">项目1</option>
+                <option value="">项目2</option>
+                <option value="">项目3</option>
+                <option value="">项目4</option>
+                <option value="">项目5</option>
+                <option value="">项目6</option>
+                <option value="">项目7</option>
+                <option value="">项目8</option>
+                <option value="">项目9</option>
+                <option value="">项目10</option>
+                <option value="">项目11</option>
+                <option value="">项目12</option>
+                <option value="">项目13</option>
+                <option value="">项目14</option>
+                <option value="">项目15</option>
+              </select>
+            </div>
+          </div><!-- 一行表单 -->
+          <div class="control-group">
+            <label class="control-label" for="inputWarning" id="pay-logo-label">上传身份证正反面:</label>
+            <div class="controls" id="pay-logo">
+              <img src="" alt="">
+              &emsp;<a href="#" class="btn btn-default">上传图片</a>&emsp; 必须是原件正、反面彩色，且上下摆放，合成在一起,竖版的。
+            </div>
+          </div><!-- 一行表单 -->
+          <div class="control-group">
+            <label class="control-label" for="inputWarning" id="pay-logo-label">营业执照或产品代理授权证:</label>
+            <div class="controls" id="pay-logo">
+              <img src="" alt="">
+              &emsp;<a href="#" class="btn btn-default">上传图片</a>&emsp;<p>请根据主办单位性质上传相关的证件原件扫描件，复印件无效（可用数码相机拍摄,但必须保证清晰）。</p>
+            </div>
+          </div><!-- 一行表单 -->
+          <div class="control-group">
+            <label class="control-label" for="inputWarning" id="pay-logo-label">其他证件:</label>
+            <div class="controls" id="pay-logo">
+              <img src="" alt="">
+              &emsp;<a href="#" class="btn btn-default">上传图片</a>&emsp; 必须是原件正、反面彩色，且上下摆放，合成在一起,竖版的。
+            </div>
+          </div><!-- 一行表单 -->
+
+          <div class="control-group">
+            <label class="control-label" for="inputWarning">认证付费<span class="form-need">*</span>:</label>
+            <div class="controls" id="project-logo">
+              <div class="form-no-edit">
+                <span>5000</span>元
+              </div>
+            </div>
+          </div><!-- 一行表单 -->
+        </div>
+        <div class="controls">
+          <input type="submit" id="submit" value="确认支付">
+          <input type="submit" class="cancel" value="取消">
+        </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="foot">
+        <div class="foot-info">
+          <ul>
+            <li>
+              <span>关于我们</span>
+              <ul class="foot-info-list">
+                <li><a href="#">为梦网简介</a></li>
+                <li><a href="#">产品服务</a></li>
+                <li><a href="#">创新优势</a></li>
+                <li><a href="#">友情链接</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>帮助</span>
+              <ul class="foot-info-list">
+                <li><a href="">加入我们</a></li>
+                <li><a href="">寻求报道</a></li>
+                <li><a href="">联系我们</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>业务合作</span>
+              <ul class="foot-info-list">
+                <li><a href="">产品服务</a></li>
+                <li><a href="">寻求报道</a></li>
+                <li><a href="">项目</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>联系我们</span>
+              <ul class="foot-info-list">
+                <li><a href="">北京创业点</a></li>
+                <li><a href="">上海创业点</a></li>
+                <li><a href="">深圳创业点</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>订阅</span>
+              <ul class="foot-info-list">
+                <li><a href=""><i class="icons">&#xea94;</i>&emsp;RSS</a></li>
+                <li><a href=""><i class="icons">&#xe602;</i>&emsp;活动通知订阅</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,532 @@
+/*
+ *这里是 创业代理 页面的css样式
+ *2015-4-10
+ *edit by gemicat
+*/
+html,body{
+	font-family: "微软雅黑";
+}
+
+/*.shadow是公共div阴影效果*/
+.shadow{
+	border:#dedede 1px solid;
+	color:#dedede;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);/*ie*/
+	-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+	box-shadow:2px 2px 10px #909090;/*opera或ie9*/
+}
+.active{
+	color: #fff !important;
+	background: #259be5;
+}
+.clear{
+	clear:both;
+}
+
+/*图片轮播*/
+div.slideBox{
+	width: 231px;
+	height: 136px;
+}
+div.slideBox ul.items li a img{
+	width: 231px;
+	height: 136px;
+}
+div.slideBox div.tips div.nums{
+	right: 60px;
+}
+
+/*start-----content部分*/
+.content{
+	width: 100%;
+	margin: 0 auto;
+	background: #f6f6f6;
+	overflow: hidden;
+}
+
+.content_in{
+	width: 1170px;
+	min-height: 200px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 19px;
+	padding-bottom: 30px;
+}
+
+/*content左半部分*/
+.content_left{
+	width: 924px;
+	float: left;
+}
+/*content部分左面上半部分*/
+.content-up{
+	width: 918px;
+	min-height:200px;
+	float: left;
+	background: #fff;
+	overflow: hidden;
+}
+#left-head{
+	width: 100%;
+	height: 300px;
+	float: left;
+	padding-bottom: 20px;
+}
+.slideDemo{
+	float: left;
+	margin-top: 36px;
+	margin-left: 20px;
+}
+#left-head-ins{
+	width: 635px;
+	min-height: 258px;
+	float: right;
+	margin-top: 36px;
+	margin-right: 15px;
+	position: relative;
+	overflow: hidden;
+}
+#head-ins-title{
+	font-size: 20px;
+	color:#000;
+}
+#head-ins-addr{
+	font-size: 14px;
+	color: #000;
+}
+#head-ins-intro{
+	font-size: 13px;
+	color: #919191;
+}
+.head-ins-select{
+	font-size: 13px;
+	color: #919191;
+	display: block;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	position: relative;
+}
+.head-ins-select span{
+	position: absolute;
+	left: 84px;
+	top: 1px;
+	color: #000;
+}
+#head-ins-bottom{
+	width: 100%;
+	height: 16px;
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	text-align: right;
+	color: #98989a;
+	font-size: 12px;
+}
+
+
+/*content中间部分*/
+.content-middle{
+	width: 918px;
+	float: left;
+	min-height: 200px;
+	margin-top: 20px;
+	position: relative;
+	background: #fff;
+}
+/*公共部分的样式开始*/
+.content-middle-div{
+	width: 100%;
+	min-height: 100px;
+	float: left;
+	position: relative;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+.middle-tag{
+	width: 170px;
+	height: 47px;
+	z-index: 999;
+	background: url("../img/vprdet_tag_bg.png") center;
+	position: absolute;
+	top: 22px;
+	left: 0px;
+	text-align: center;
+	line-height: 40px;
+	color:#fff;
+	font-size: 18px;
+}
+/*公共部分样式结束*/
+#middle-div-1{
+	font-size: 14px;
+	color: #434343;
+	line-height: 23px;
+}
+#middle-div-in-1{
+	width: 823px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	min-height: 50px;
+	margin-top: 85px;
+	margin-left: 57px;
+}
+
+#middle-div-in-2{
+	width: 831px;
+	min-height: 50px;
+	float: left;
+	margin-top: 85px;
+	margin-left: 41px;
+}
+#middle-in2-head{
+	width: 100%;
+	height:72px;
+	background: #fafafa; 
+	text-align: center;
+	line-height: 72px;
+	color: #1c1c1c;
+	font-size: 16px;
+	float: left;
+}
+#middle-add-btn{
+	width: 140px;
+	height: 37px;
+	background: url("../img/buagde_hbtn_bg.gif") center;
+	border-bottom: 0px;
+	margin-left: 56px;
+	margin-top: -10px;
+}
+/*中间部分个人介绍重复部分*/
+.middle-in2-block{
+	display: block;
+	float: left;
+	width: 234px;
+	min-height: 283px;
+	overflow: hidden;
+	margin-right: 34px;
+	padding-bottom: 15px;
+	list-style: none;
+}
+.in2-block-head{
+	width: 100%;
+	height: 143px;
+	float: left;;
+	position: relative;
+}
+.in2-head-img{
+	width: 110px;
+	height: 110px;
+	border-radius: 110px;
+	border: 1px solid #dadada;
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	left: 15px;
+}
+.in2-head-name{
+	width: 95px;
+	height: 40px;
+	position: absolute;
+	font-size: 15px;
+	color: #555555;
+	right: 0px;
+	top: 56px;
+}
+.in2-head-name h5{
+	font-size: 16px;
+	color: #2d2d2d;
+}
+.in2-block-body{
+	width: 100%;
+	min-height: 100px;
+	float: left;
+	overflow: hidden;
+	margin-top: 15px;
+	font-size: 13px;
+	color: #2d2d2d;
+}
+/*结束中间部分个人介绍重复部分*/
+#middle-div-in-3{
+	width: 831px;
+	min-height: 50px;
+	float: left;
+	margin-top: 85px;
+	margin-left: 41px;
+	font-size: 14px;
+	color: #232323;
+}
+#middle-in3-head{
+	width: 100%;
+	height: 61px;
+	float: left;
+	background: #fafafa; 
+	text-align: left;
+	line-height: 61px;
+	color: #1c1c1c;
+	font-size: 16px;
+}
+.in3-tag{
+	width: 156px;
+	height: 61px;
+	text-align: center;
+	line-height: 61px;
+	font-size: 14px;
+	color: #232323;
+	float: left;
+}
+#in3-head-title{
+	background: #e3e3e3;
+}
+#in3-head-1{
+	background: #f4f2cb;
+	margin: 18px 34px 10px 0;
+}
+#in3-head-2{
+	background: #ffc5c5;
+	margin: 18px 34px 10px 0;
+}
+#in3-head-3{
+	background: #cce6fe;
+	margin-top: 18px;
+}
+#in3-add{
+	width: 100%;
+	float: left;
+}
+#in3-ins{
+	width: 829px;
+	min-height: 72px;
+	overflow: hidden;
+	float: left;
+	background: #fafafa;
+	border:1px solid #e5e5e5;
+	margin-top: 3px;
+	padding-bottom: 10px;
+}
+#in3-ins-body{
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 780px;
+	min-height: 24px;
+	font-size: 13px;
+	line-height: 23px;
+}
+
+#middle-div-in-4{
+	width: 823px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	min-height: 50px;
+	margin-top: 85px;
+	margin-left: 41px;
+}
+
+/*时间轴开始*/
+.middle-in4-block{
+	width: 100%;
+	list-style: none;
+	float: left;
+	overflow: hidden;
+	margin-left: -15px;
+	min-height: 58px;
+	position: relative;
+}
+.in4-block-time{
+	width: 129px;
+	height: 58px;
+	line-height: 58px;
+	text-align: left;
+	float: left;
+	color: #999999;
+	font-size: 14px;
+}
+.in4-block-ins{
+	width: 620px;
+	float: left;
+	min-height: 58px;
+	overflow: hidden;
+	border-left: 1px solid #e0e0e0;
+}
+.in4-block-insin{
+	margin-left: 45px;
+	width: 575px;
+	min-height: 30px;
+	line-height: 30px;
+	text-align: left;
+	font-size: 14px;
+	margin-top: 13px;
+	color: #000;
+}
+.in4-point{
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	background: #e0e0e0;
+	left: 125px;
+	top: 24px;
+	border-radius: 9px;
+}
+/*时间轴结束*/
+
+/*content左面下部分*/
+.content-down{
+	width: 918px;
+	float: left;
+	min-height: 200px;
+	margin-top: 20px;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 65px;
+}
+#down-title{
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 18px;
+	color: #393939;
+	position: absolute;
+	left: 28px;
+	top: 31px;
+}
+#content-down-body{
+	width: 784px;
+	min-height: 200px;
+	margin: 0 auto;
+	margin-top: 75px;
+}
+#content-down-body textarea{
+	width: 770px;
+	height: 117px;
+	resize:none;
+	overflow: hidden;
+	display: block;
+	float: left;
+}
+.down-text-btn{
+	width: 770px;
+	height: 26px;
+	float: left;
+	text-align: right;
+}
+.submit-text,.cancel-text{
+	width: 55px !important;
+	height: 26px;
+}
+
+/*这里是每条评论的样式*/
+.content-chat{
+	width: 100%;
+	min-height: 70px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #dedede;
+}
+.content-chat img{
+	width: 42px;
+	height: 42px;
+	float: left;
+	border: #dedede 1px solid;
+	margin: 19px 0 0 5px;
+}
+.content-chat-ins{
+	width:603px;
+	height: auto;
+	float: left;
+	margin-top: 15px;
+	margin-left:  10px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #333333;
+	overflow: hidden;
+}
+.chat-pro-name a{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	text-decoration: none;
+	color: #999999;
+}
+.chat-pro-time{
+	font-size:13px; 
+	color:#b29999;
+	position: absolute;
+	right: 0;
+	top: 33px;
+}
+
+
+
+/**********************************/
+/*中间右边部分*/
+.content-aside{
+	width: 229px;
+	min-height: 200px;
+	float: right;
+	overflow: hidden;
+}
+#aside-more-pic{
+	width: 229px;
+	height: 131px;
+	float: left;
+}
+#aside-enjoy{
+	width: 227px;
+	height: 62px;
+	float: left;
+	background:#fff;
+	border: 1px solid #dedede;
+	margin-top: 10px;
+	line-height: 62px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+
+/*广告公共样式*/
+.aside-ad{
+	width: 100%;
+	height: 255px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 40px;
+}
+.aside-ad-pic{
+	width: 100%;
+	height: 136px;
+	float: left;
+}
+.aside-ad-title{
+	width: 100%;
+	height: 21px;
+	line-height: 21px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	float: left;
+	margin-top: 26px;
+}
+.aside-ad-title img{
+	float: right;
+}
+.aside-ad-article{
+	width: 100%;
+	float:left;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #b5b5b5;
+	margin-top: 5px;
+}
+.aside-ad-hot{
+	color: #98989a;
+	font-size: 12px;
+	position: absolute;
+	bottom: 3px;
+	right: 20px;
+}
+/*end-----content部分

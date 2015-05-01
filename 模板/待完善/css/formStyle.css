@@ -1,0 +1,124 @@
+.main{
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.main-title{
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+  font-family: "微软雅黑";
+  position: relative;
+}
+.main-title h3{
+  font-weight: normal;
+}
+.main-title span{
+  float: right;
+  display: inline-block;
+  width: 113px;
+  height: 37px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  line-height: 37px;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+.main-title span a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+}
+.main-form{
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+}
+.form-box{
+  height: auto;
+  position: relative;
+  padding: 30px 0;
+  width: 1196px;
+  border-top: 1px #ccc solid;
+  border-left: 1px #ccc solid;
+  box-shadow: 2px 2px 2px #ccc ;
+  margin-bottom: 20px;
+}
+#project-logo-label{
+  height: 50px !important;
+  padding-top: 0px !important;
+  line-height: 50px !important;
+}
+#project-logo img{
+  height:50px;
+  width: 50px;
+  vertical-align: middle;
+}
+#submit{
+  padding: 5px 20px;
+  display: inline-block;
+  float: left;
+  border: none;
+  margin-bottom: 50px;
+  color: #fff;
+  background-color: #2a5db0;
+}
+.cancel{
+  padding: 5px 20px;
+  display: inline-block;
+  float: left;
+  border: none;
+  color: #fff;
+  margin-left: 30px;
+  background-color: #b4b4b4;
+  margin-bottom: 50px;
+}
+.controls-left{
+  float: left;
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
+.controls-right{
+  float: left;
+  margin-left: 20px;
+  height: 60px;
+  overflow: hidden;
+}
+.controls-right textarea{
+  height: 50px;
+}
+
+.controls-img{
+  float: left;
+  margin-right: 20px;
+  height: 50px !important;
+  padding-top: 0px !important;
+  line-height: 50px !important;
+}
+.controls-img img{
+  height:50px;
+  width: 50px;
+  vertical-align: middle;
+}
+.hr{
+  width: 100%;
+  height: 3px;
+  background-color: #ccc;
+  border-radius: 3px;
+}
+.form-no-edit{
+  height: auto;
+  margin-top: 5px;
+  overflow: hidden;
+  display: inline-block;
+  width:625px;
+}
+.form-no-edit span{
+  font-size: 20px;
+  color: #f81;
+}
